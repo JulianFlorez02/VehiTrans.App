@@ -1,0 +1,222 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\RESPALDO JULIAN\\MISION TIC\\2022-PROGRAMACION\\Ciclo 3\\Desarrollo de Software\\ProyectoFinal\\VehiTrans.App\\VehiTrans.App.Consola\\VehiTrans.App.Consola.csproj": {}
+  },
+  "projects": {
+    "D:\\RESPALDO JULIAN\\MISION TIC\\2022-PROGRAMACION\\Ciclo 3\\Desarrollo de Software\\ProyectoFinal\\VehiTrans.App\\VehiTrans.App.Consola\\VehiTrans.App.Consola.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\RESPALDO JULIAN\\MISION TIC\\2022-PROGRAMACION\\Ciclo 3\\Desarrollo de Software\\ProyectoFinal\\VehiTrans.App\\VehiTrans.App.Consola\\VehiTrans.App.Consola.csproj",
+        "projectName": "VehiTrans.App.Consola",
+        "projectPath": "D:\\RESPALDO JULIAN\\MISION TIC\\2022-PROGRAMACION\\Ciclo 3\\Desarrollo de Software\\ProyectoFinal\\VehiTrans.App\\VehiTrans.App.Consola\\VehiTrans.App.Consola.csproj",
+        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
+        "outputPath": "D:\\RESPALDO JULIAN\\MISION TIC\\2022-PROGRAMACION\\Ciclo 3\\Desarrollo de Software\\ProyectoFinal\\VehiTrans.App\\VehiTrans.App.Consola\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "d:\\RESPALDO JULIAN\\MISION TIC\\2022-PROGRAMACION\\Ciclo 3\\Desarrollo de Software\\ProyectoFinal\\VehiTrans.App\\VehiTrans.App.Dominio\\VehiTrans.App.Dominio.csproj": {
+                "projectPath": "d:\\RESPALDO JULIAN\\MISION TIC\\2022-PROGRAMACION\\Ciclo 3\\Desarrollo de Software\\ProyectoFinal\\VehiTrans.App\\VehiTrans.App.Dominio\\VehiTrans.App.Dominio.csproj"
+              },
+              "D:\\RESPALDO JULIAN\\MISION TIC\\2022-PROGRAMACION\\Ciclo 3\\Desarrollo de Software\\ProyectoFinal\\VehiTrans.App\\VehiTrans.App.Persistencia\\VehiTrans.App.Persistencia.csproj": {
+                "projectPath": "D:\\RESPALDO JULIAN\\MISION TIC\\2022-PROGRAMACION\\Ciclo 3\\Desarrollo de Software\\ProyectoFinal\\VehiTrans.App\\VehiTrans.App.Persistencia\\VehiTrans.App.Persistencia.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "d:\\RESPALDO JULIAN\\MISION TIC\\2022-PROGRAMACION\\Ciclo 3\\Desarrollo de Software\\ProyectoFinal\\VehiTrans.App\\VehiTrans.App.Dominio\\VehiTrans.App.Dominio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "d:\\RESPALDO JULIAN\\MISION TIC\\2022-PROGRAMACION\\Ciclo 3\\Desarrollo de Software\\ProyectoFinal\\VehiTrans.App\\VehiTrans.App.Dominio\\VehiTrans.App.Dominio.csproj",
+        "projectName": "VehiTrans.App.Dominio",
+        "projectPath": "d:\\RESPALDO JULIAN\\MISION TIC\\2022-PROGRAMACION\\Ciclo 3\\Desarrollo de Software\\ProyectoFinal\\VehiTrans.App\\VehiTrans.App.Dominio\\VehiTrans.App.Dominio.csproj",
+        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
+        "outputPath": "d:\\RESPALDO JULIAN\\MISION TIC\\2022-PROGRAMACION\\Ciclo 3\\Desarrollo de Software\\ProyectoFinal\\VehiTrans.App\\VehiTrans.App.Dominio\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\RESPALDO JULIAN\\MISION TIC\\2022-PROGRAMACION\\Ciclo 3\\Desarrollo de Software\\ProyectoFinal\\VehiTrans.App\\VehiTrans.App.Persistencia\\VehiTrans.App.Persistencia.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\RESPALDO JULIAN\\MISION TIC\\2022-PROGRAMACION\\Ciclo 3\\Desarrollo de Software\\ProyectoFinal\\VehiTrans.App\\VehiTrans.App.Persistencia\\VehiTrans.App.Persistencia.csproj",
+        "projectName": "VehiTrans.App.Persistencia",
+        "projectPath": "D:\\RESPALDO JULIAN\\MISION TIC\\2022-PROGRAMACION\\Ciclo 3\\Desarrollo de Software\\ProyectoFinal\\VehiTrans.App\\VehiTrans.App.Persistencia\\VehiTrans.App.Persistencia.csproj",
+        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
+        "outputPath": "D:\\RESPALDO JULIAN\\MISION TIC\\2022-PROGRAMACION\\Ciclo 3\\Desarrollo de Software\\ProyectoFinal\\VehiTrans.App\\VehiTrans.App.Persistencia\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "d:\\RESPALDO JULIAN\\MISION TIC\\2022-PROGRAMACION\\Ciclo 3\\Desarrollo de Software\\ProyectoFinal\\VehiTrans.App\\VehiTrans.App.Dominio\\VehiTrans.App.Dominio.csproj": {
+                "projectPath": "d:\\RESPALDO JULIAN\\MISION TIC\\2022-PROGRAMACION\\Ciclo 3\\Desarrollo de Software\\ProyectoFinal\\VehiTrans.App\\VehiTrans.App.Dominio\\VehiTrans.App.Dominio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

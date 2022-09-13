@@ -1,0 +1,60 @@
+﻿@page
+@model VehiTrans.App.Frontend.RegVehiculosModel
+@{
+      ViewData["Title"] = "DIGSOL - Registro Vehiculo";
+}
+<h1>Registro del Vehiculo 🚌🚕</h1>
+<form method="post" class="card p-3">
+    <div class="row">
+        <div asp-validation-summary="All"></div>
+    </div>
+    <div class="form-group mb-0">
+        <p>
+            <label asp-for="NewVehiculo.Placa">Placa:  </label>
+            <input type="text" asp-for="NewVehiculo.Placa" class="mr-5">
+        </p>
+        <p>
+            <label asp-for="NewVehiculo.Marca">Marca:  </label>
+            <input type="text" asp-for="NewVehiculo.Marca" class="mr-5">
+        </p>
+        <p>
+            <label asp-for="NewVehiculo.Modelo">Modelo: </label>
+            <input type="text" asp-for="NewVehiculo.Modelo" class="mr-5">
+        </p>
+        <p>
+            <label asp-for="NewVehiculo.VehiculoTipoId">Tipo de Vehiculo: </label>
+            <input type="text" asp-for="NewVehiculo.VehiculoTipoId" class="mr-5">
+        </p>
+        <p>
+            <label asp-for="NewVehiculo.CantidadPasajeros">Cantidad de Pasajeros: </label>
+            <input type="text" asp-for="NewVehiculo.CantidadPasajeros" class="mr-5">
+        </p>
+        <p>
+            <label asp-for="NewVehiculo.CilindrajeMotor">Cilindraje del Motor: </label>
+            <input type="text" asp-for="NewVehiculo.CilindrajeMotor" class="mr-5">
+        </p>
+        <p>
+            <label asp-for="NewVehiculo.PropietarioId">PropietarioId</label>
+            <input type="text" asp-for="NewVehiculo.PropietarioId" class="mr-5">
+        </p>
+        <p>
+            <label asp-for="NewVehiculo.ConductorId">ConductorId</label>
+            <input type="text" asp-for="NewVehiculo.ConductorId" class="mr-5">
+        </p>
+        <p>
+            <label asp-for="NewVehiculo.MecanicoId">MecanicoId</label>
+            <input type="text" asp-for="NewVehiculo.MecanicoId" class="mr-5">
+        </p>
+
+
+        @* <label asp-for="NewVehiculo.Size">Size</label>
+        <select asp-for="NewVehiculo.Size" asp-items="Html.GetEnumSelectList<PizzaSize>()" class="mr-5"></select>
+        <label asp-for="NewVehiculo.Price"></label>
+        <input asp-for="NewVehiculo.Price" class="mr-5" />
+        <label asp-for="NewVehiculo.IsGlutenFree">Gluten Free</label>
+        <input type="checkbox" asp-for="NewVehiculo.IsGlutenFree" class="mr-5"> *@
+        <button type="submit" class="btn btn-primary">Addicionar</button>
+    </div>
+</form>
+
+<a asp-page="./Vehiculos" class="btn-default">Lista de Vehiculos</a>

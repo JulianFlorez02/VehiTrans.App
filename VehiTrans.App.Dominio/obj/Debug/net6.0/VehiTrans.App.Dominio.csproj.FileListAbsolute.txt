@@ -1,0 +1,12 @@
+D:\RESPALDO JULIAN\MISION TIC\2022-PROGRAMACION\Ciclo 3\Desarrollo de Software\ProyectoFinal\VehiTrans.App\VehiTrans.App.Dominio\bin\Debug\net6.0\VehiTrans.App.Dominio.deps.json
+D:\RESPALDO JULIAN\MISION TIC\2022-PROGRAMACION\Ciclo 3\Desarrollo de Software\ProyectoFinal\VehiTrans.App\VehiTrans.App.Dominio\bin\Debug\net6.0\VehiTrans.App.Dominio.dll
+D:\RESPALDO JULIAN\MISION TIC\2022-PROGRAMACION\Ciclo 3\Desarrollo de Software\ProyectoFinal\VehiTrans.App\VehiTrans.App.Dominio\bin\Debug\net6.0\VehiTrans.App.Dominio.pdb
+D:\RESPALDO JULIAN\MISION TIC\2022-PROGRAMACION\Ciclo 3\Desarrollo de Software\ProyectoFinal\VehiTrans.App\VehiTrans.App.Dominio\obj\Debug\net6.0\VehiTrans.App.Dominio.csproj.AssemblyReference.cache
+D:\RESPALDO JULIAN\MISION TIC\2022-PROGRAMACION\Ciclo 3\Desarrollo de Software\ProyectoFinal\VehiTrans.App\VehiTrans.App.Dominio\obj\Debug\net6.0\VehiTrans.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+D:\RESPALDO JULIAN\MISION TIC\2022-PROGRAMACION\Ciclo 3\Desarrollo de Software\ProyectoFinal\VehiTrans.App\VehiTrans.App.Dominio\obj\Debug\net6.0\VehiTrans.App.Dominio.AssemblyInfoInputs.cache
+D:\RESPALDO JULIAN\MISION TIC\2022-PROGRAMACION\Ciclo 3\Desarrollo de Software\ProyectoFinal\VehiTrans.App\VehiTrans.App.Dominio\obj\Debug\net6.0\VehiTrans.App.Dominio.AssemblyInfo.cs
+D:\RESPALDO JULIAN\MISION TIC\2022-PROGRAMACION\Ciclo 3\Desarrollo de Software\ProyectoFinal\VehiTrans.App\VehiTrans.App.Dominio\obj\Debug\net6.0\VehiTrans.App.Dominio.csproj.CoreCompileInputs.cache
+D:\RESPALDO JULIAN\MISION TIC\2022-PROGRAMACION\Ciclo 3\Desarrollo de Software\ProyectoFinal\VehiTrans.App\VehiTrans.App.Dominio\obj\Debug\net6.0\VehiTrans.App.Dominio.dll
+D:\RESPALDO JULIAN\MISION TIC\2022-PROGRAMACION\Ciclo 3\Desarrollo de Software\ProyectoFinal\VehiTrans.App\VehiTrans.App.Dominio\obj\Debug\net6.0\refint\VehiTrans.App.Dominio.dll
+D:\RESPALDO JULIAN\MISION TIC\2022-PROGRAMACION\Ciclo 3\Desarrollo de Software\ProyectoFinal\VehiTrans.App\VehiTrans.App.Dominio\obj\Debug\net6.0\VehiTrans.App.Dominio.pdb
+D:\RESPALDO JULIAN\MISION TIC\2022-PROGRAMACION\Ciclo 3\Desarrollo de Software\ProyectoFinal\VehiTrans.App\VehiTrans.App.Dominio\obj\Debug\net6.0\ref\VehiTrans.App.Dominio.dll

@@ -1,0 +1,37 @@
+﻿@page
+@model VehiTrans.App.Frontend.VehiculosModel
+@{
+}
+<h1>Lista de Vehiculos</h1>
+<a asp-page="./RegVehiculos" class="btn btn-primary">Registrar Vehiculo</a>
+<br>
+
+<table class="table mt-5">
+    <thead>
+        <tr>
+            <th scope="col">Placa</th>
+            <th scope="col">Marca</th>
+            <th scope="col">Modelo</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Pasajeros</th>
+            <th scope="col">Motor</th>
+        </tr>
+    </thead>
+    @foreach (var vvehiculo in Model.ListaVehiculos)
+    {
+        <tr>
+            <td>@vvehiculo.Placa</td>
+            <td>@vvehiculo.Marca</td>
+            <td>@vvehiculo.Modelo</td>
+            <td>@Model.TipoVehiculoText(vvehiculo.VehiculoTipoId)</td>
+            <td>@vvehiculo.CantidadPasajeros</td>
+            <td>@vvehiculo.CilindrajeMotor</td>
+            <td>
+                <form method="post" asp-page-handler="Delete" asp-route-id="@vvehiculo.VehiculoId">
+                    <button class="btn btn-danger">Borrar</button>
+                </form>
+            </td>
+        </tr>
+    }
+</table>
+

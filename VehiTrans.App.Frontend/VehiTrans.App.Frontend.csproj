@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\VehiTrans.App.Dominio\VehiTrans.App.Dominio.csproj" />
+    <ProjectReference Include="..\VehiTrans.App.Persistencia\VehiTrans.App.Persistencia.csproj" />
+  </ItemGroup>
+
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+</Project>
