@@ -60,10 +60,15 @@ namespace VehiTrans.App.Persistencia
             var MecanicoEncontrado = _appContext.Mecanicos.FirstOrDefault(p => p.MecanicoId == Mecanico.MecanicoId);
             if (MecanicoEncontrado != null)
             {
+                MecanicoEncontrado.Documento = Mecanico.Documento;
+                MecanicoEncontrado.Nombre = Mecanico.Nombre;
+                MecanicoEncontrado.Apellidos = Mecanico.Apellidos;
+                MecanicoEncontrado.Telefono = Mecanico.Telefono;
+                MecanicoEncontrado.FechaNacimiento = Mecanico.FechaNacimiento;
+                MecanicoEncontrado.Usuario = Mecanico.Usuario;
+                MecanicoEncontrado.Contraseña = Mecanico.Contraseña;
                 MecanicoEncontrado.Direccion = Mecanico.Direccion;
                 MecanicoEncontrado.NivelEstudio = Mecanico.NivelEstudio;
-                //MecanicoEncontrado.PersonaId = Mecanico.PersonaId;
-                //MecanicoEncontrado.Persona = Mecanico.Persona;
 
                 _appContext.SaveChanges();
 

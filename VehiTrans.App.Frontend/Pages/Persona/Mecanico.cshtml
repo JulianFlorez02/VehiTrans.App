@@ -5,3 +5,48 @@
 <h2>Lista de Mecanicos</h2>
 
 <a asp-page="./RegMecanico" class="btn btn-primary">Registrar</a>
+
+@* <form method="get">
+    <div class="form-group">
+        <p>
+            Mecanico: <input type="text" name="filtroBusqueda" asp-for="FiltroBusqueda"/>
+            <input type="submit" value="Filtrar" />
+        </p>
+</form> *@
+
+<table class="table mt-5">
+    <thead>
+        <tr>
+            <th scope="col">Documento</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellidos</th>
+            <th scope="col">Telefono</th>
+            <th scope="col">Direccion</th>
+            <th scope="col">NivelEstudio</th>
+            <th scope="col"></th>
+            
+        </tr>
+    </thead>
+    @foreach (var Mecanico in Model.ListaMecanicos)
+    {
+        <tr>
+            <td>@Mecanico.Documento</td>
+            <td>@Mecanico.Nombre</td>
+            <td>@Mecanico.Apellidos</td>
+            <td>@Mecanico.Telefono</td>
+            <td>@Mecanico.Direccion</td>
+            <td>@Mecanico.NivelEstudio</td>
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./EditMecanico" asp-route-MecanicoId="@Mecanico.MecanicoId">
+                    <i class="fas fa-address-book fa-lg" aria-hidden="true"> </i>
+                    Editar
+                </a>
+            </td>
+            <td>
+                <form method="post" asp-page-handler="Delete" asp-route-id="@Mecanico.MecanicoId">
+                    <button class="btn btn-danger">Borrar</button>
+                </form>
+            </td>
+        </tr>
+    }
+</table>
