@@ -7,18 +7,15 @@ namespace VehiTrans.App.Frontend.Pages
 {
     public class EditMecanicoModel : PageModel
     {
-        private readonly IRepositorioMecanico? repositorioMecanicos;
+        private static IRepositorioMecanico _repoMecanico= new RepositorioMecanico(new Persistencia.AppContext());
         [BindProperty]
         public Mecanico? EditMecanico{get;set;}
-        public EditMecanicoModel(IRepositorioMecanico repositorioMecanicos)
-        {
-            this.repositorioMecanicos = repositorioMecanicos;
-        }
+        
         public IActionResult OnGet(int? MecanicoId)
         {
             if(MecanicoId.HasValue)
             {
-                EditMecanico = repositorioMecanicos.GetMecanico(MecanicoId.Value);
+                EditMecanico = _repoMecanico.GetMecanico(MecanicoId.Value);
             }
             else
             {
@@ -34,18 +31,25 @@ namespace VehiTrans.App.Frontend.Pages
 
         public IActionResult OnPost()
         {
-            if(!ModelState.IsValid)
+            // if(!ModelState.IsValid)
+            // {
+            //     return Page();
+            // }
+            // if(EditMecanico.MecanicoId>0)
+            // {
+            //     EditMecanico = _repoMecanico.UpdateMecanico(EditMecanico);
+            // }
+            // else
+            // {
+            //     _repoMecanico.AddMecanico(EditMecanico);
+            // }
+            // return Page();
+            if (!ModelState.IsValid)
             {
                 return Page();
             }
-            if(EditMecanico.MecanicoId>0)
-            {
-                EditMecanico = repositorioMecanicos.UpdateMecanico(EditMecanico);
-            }
-            else
-            {
-                repositorioMecanicos.AddMecanico(EditMecanico);
-            }
+
+            _repoMecanico.UpdateMecanico(EditMecanico);
             return Page();
         }
     }
