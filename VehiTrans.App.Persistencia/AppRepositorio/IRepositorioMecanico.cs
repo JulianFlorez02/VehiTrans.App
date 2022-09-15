@@ -13,6 +13,6 @@ namespace VehiTrans.App.Persistencia
         Mecanico UpdateMecanico(Mecanico Mecanico);
         void DeleteMecanico(int idMecanico);
         Mecanico GetMecanico(int idMecanico);
-
+        IEnumerable<Mecanico> BuscarMecanico(string filtro);
     }
 }

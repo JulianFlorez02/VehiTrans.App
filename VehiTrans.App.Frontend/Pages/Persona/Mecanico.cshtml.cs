@@ -9,15 +9,19 @@ namespace VehiTrans.App.Frontend.Pages
     {
         private static IRepositorioMecanico _repoMecanico= new RepositorioMecanico(new Persistencia.AppContext());
         public IEnumerable<Mecanico> ListaMecanicos {get; set;}
+        [BindProperty(SupportsGet =true)]
+        public string FiltroBusqueda{get;set;}
         public void OnGet()
         {
             ListaMecanicos =  _repoMecanico.GetAllMecanicos();
         }
 
                        
-        public IActionResult OnPostDelete(int Id)
+        public IActionResult OnPost(int Id, string filtroBusqueda)
         {
+            FiltroBusqueda=filtroBusqueda;
             //Console.WriteLine("Borrando web: "+ Id);
+            _repoMecanico.BuscarMecanico(filtroBusqueda);
             _repoMecanico.DeleteMecanico(Id);
             return RedirectToAction("Get");
         }
