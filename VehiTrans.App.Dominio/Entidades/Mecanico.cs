@@ -14,6 +14,7 @@ namespace VehiTrans.App.Dominio
         public string? Usuario { get; set; }
         public string? Contraseña { get; set; }
         public string? Direccion { get; set; }
-        public string? NivelEstudio {get;set;}
+        public int TipoEstudioId {get;set;}
+        public TipoEstudio? TipoEstudio {get;set;}
     }
 }

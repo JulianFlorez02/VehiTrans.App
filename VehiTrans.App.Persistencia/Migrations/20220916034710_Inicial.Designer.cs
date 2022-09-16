@@ -12,7 +12,7 @@ using VehiTrans.App.Persistencia;
 namespace VehiTrans.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContext))]
-    [Migration("20220913034532_Inicial")]
+    [Migration("20220916034710_Inicial")]
     partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -196,19 +196,21 @@ namespace VehiTrans.App.Persistencia.Migrations
                     b.Property<DateTime?>("FechaNacimiento")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("NivelEstudio")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Nombre")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Telefono")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("TipoEstudioId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Usuario")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("MecanicoId");
+
+                    b.HasIndex("TipoEstudioId");
 
                     b.ToTable("Mecanicos");
                 });
@@ -337,6 +339,23 @@ namespace VehiTrans.App.Persistencia.Migrations
                     b.ToTable("Seguros");
                 });
 
+            modelBuilder.Entity("VehiTrans.App.Dominio.TipoEstudio", b =>
+                {
+                    b.Property<int>("TipoEstudioId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TipoEstudioId"), 1L, 1);
+
+                    b.Property<string>("Descripcion")
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
+
+                    b.HasKey("TipoEstudioId");
+
+                    b.ToTable("TipoEstudios");
+                });
+
             modelBuilder.Entity("VehiTrans.App.Dominio.TipoSeguro", b =>
                 {
                     b.Property<int>("TipoSeguroId")
@@ -438,6 +457,17 @@ namespace VehiTrans.App.Persistencia.Migrations
                     b.Navigation("Repuestos");
 
                     b.Navigation("revision");
+                });
+
+            modelBuilder.Entity("VehiTrans.App.Dominio.Mecanico", b =>
+                {
+                    b.HasOne("VehiTrans.App.Dominio.TipoEstudio", "TipoEstudio")
+                        .WithMany()
+                        .HasForeignKey("TipoEstudioId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("TipoEstudio");
                 });
 
             modelBuilder.Entity("VehiTrans.App.Dominio.Revision", b =>

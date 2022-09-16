@@ -10,6 +10,7 @@ namespace VehiTrans.App.Consola
         private static IRepositorioPropietario _repoPropietario = new RepositorioPropietario(new Persistencia.AppContext());
         private static IRepositorioConductor _repoConductor = new RepositorioConductor(new Persistencia.AppContext());
         private static IRepositorioMecanico _repoMecanico = new RepositorioMecanico(new Persistencia.AppContext());
+        private static IRepositorioTipoEstudio _repoTipoEstudio = new RepositorioTipoEstudio(new Persistencia.AppContext());
         private static IRepositorioVehiculoTipo _repoVehiculoTipos = new RepositorioVehiculoTipo(new Persistencia.AppContext());
         private static IRepositorioVehiculo _repoVehiculo = new RepositorioVehiculo(new Persistencia.AppContext());
 
@@ -23,7 +24,8 @@ namespace VehiTrans.App.Consola
             //AddConductor();
             //AddVehiculosTipo("Buseta");
             //AddVehiculosTipo("Microbus");
-            AddVehiculo();
+            //AddVehiculo();
+            AddTipoEstudio();
         }
         private static void AddMecanico()
         {
@@ -38,6 +40,41 @@ namespace VehiTrans.App.Consola
             };
 
             _repoMecanico.AddMecanico(Mecanico);
+
+        }
+
+        private static void AddTipoEstudio()
+        {
+            var TipoEstudio1 = new TipoEstudio
+            {
+                Descripcion = "Bachiller",
+            };
+            var TipoEstudio2 = new TipoEstudio
+            {
+                Descripcion = "Tecnico",
+            };
+            var TipoEstudio3 = new TipoEstudio
+            {
+                Descripcion = "Tecnologo",
+            };
+            var TipoEstudio4 = new TipoEstudio
+            {
+                Descripcion = "Profesional",
+            };
+            var TipoEstudio5 = new TipoEstudio
+            {
+                Descripcion = "Especialista",
+            };
+            var TipoEstudio6 = new TipoEstudio
+            {
+                Descripcion = "Magister",
+            };
+            _repoTipoEstudio.AddTipoEstudio(TipoEstudio1);
+            _repoTipoEstudio.AddTipoEstudio(TipoEstudio2);
+            _repoTipoEstudio.AddTipoEstudio(TipoEstudio3);
+            _repoTipoEstudio.AddTipoEstudio(TipoEstudio4);
+            _repoTipoEstudio.AddTipoEstudio(TipoEstudio5);
+            _repoTipoEstudio.AddTipoEstudio(TipoEstudio6);
 
         }
 

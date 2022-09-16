@@ -68,7 +68,8 @@ namespace VehiTrans.App.Persistencia
                 MecanicoEncontrado.Usuario = Mecanico.Usuario;
                 MecanicoEncontrado.Contraseña = Mecanico.Contraseña;
                 MecanicoEncontrado.Direccion = Mecanico.Direccion;
-                MecanicoEncontrado.NivelEstudio = Mecanico.NivelEstudio;
+                MecanicoEncontrado.TipoEstudioId = Mecanico.TipoEstudioId;
+                MecanicoEncontrado.TipoEstudio = Mecanico.TipoEstudio;
 
                 _appContext.SaveChanges();
 
