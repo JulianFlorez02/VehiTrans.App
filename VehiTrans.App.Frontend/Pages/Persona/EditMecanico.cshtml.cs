@@ -8,14 +8,16 @@ namespace VehiTrans.App.Frontend.Pages
     public class EditMecanicoModel : PageModel
     {
         private static IRepositorioMecanico _repoMecanico= new RepositorioMecanico(new Persistencia.AppContext());
+        private static IRepositorioTipoEstudio _repoTipoEstudio = new RepositorioTipoEstudio(new Persistencia.AppContext());
+        public IEnumerable<TipoEstudio> ListaTipoEstudio {get; set;}
         [BindProperty]
         public Mecanico? EditMecanico{get;set;}
-        
         public IActionResult OnGet(int? MecanicoId)
         {
             if(MecanicoId.HasValue)
             {
                 EditMecanico = _repoMecanico.GetMecanico(MecanicoId.Value);
+                ListaTipoEstudio = _repoTipoEstudio.GetAllTipoEstudios();
             }
             else
             {

@@ -46,10 +46,16 @@
         <span class="text-danger" asp-validation-for="NewMecanico.Direccion"></span>
     </div>
     <div class="form-group">
-        <label asp-for="NewMecanico.NivelEstudio">Nivel de estudio:</label>
-        <input asp-for="NewMecanico.NivelEstudio" class="form-control">
-        <span class="text-danger" asp-validation-for="NewMecanico.NivelEstudio"></span>
+        <label asp-for="NewMecanico.TipoEstudioId">Nivel de estudio:</label>
+        <select name="TipoEstudio" class="form-control">
+            @foreach (var TipoEstudio in Model.ListaTipoEstudio)
+            {
+                <option asp-for="@TipoEstudio.TipoEstudioId" value="@TipoEstudio.TipoEstudioId">@TipoEstudio.Descripcion</option>
+            }
+            
+        </select>
     </div>
+    <br>
     <button type="submit" class="btn btn-primary">Registrar</button>
 </form>
 
