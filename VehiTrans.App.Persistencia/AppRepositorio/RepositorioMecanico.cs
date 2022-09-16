@@ -79,7 +79,7 @@ namespace VehiTrans.App.Persistencia
 
         IEnumerable<Mecanico> IRepositorioMecanico.BuscarMecanico(string filtro = null) // la asignación filtro=null indica que el parámetro filtro es opcional
         {
-            return _appContext.Mecanicos.Where(m => m.Documento.Contains(filtro) || m.Nombre.Contains(filtro) || m.Apellidos.Contains(filtro));;
+            return _appContext.Mecanicos.Where(m => m.Documento.Contains(filtro) || m.Nombre.Contains(filtro) || m.Apellidos.Contains(filtro));
         }
 
     }
