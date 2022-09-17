@@ -13,6 +13,7 @@ namespace VehiTrans.App.Persistencia
         JefeOperaciones UpdateJefeOperaciones(JefeOperaciones jefeOperaciones);
         void DeleteJefeOperaciones(int idJefeOperaciones);
         JefeOperaciones GetJefeOperaciones(int idJefeOperaciones);
+        IEnumerable<JefeOperaciones> BuscarJefeOperaciones(string filtro);
 
     }
 }

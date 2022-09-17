@@ -13,6 +13,7 @@ namespace VehiTrans.App.Persistencia
         Auxiliar UpdateAuxiliar(Auxiliar auxiliar);
         void DeleteAuxiliar(int idAuxiliar);
         Auxiliar GetAuxiliar(int idAuxiliar);
+        IEnumerable<Auxiliar> BuscarAuxiliar(string filtro);
 
     }
 }

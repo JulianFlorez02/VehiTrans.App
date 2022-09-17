@@ -13,6 +13,7 @@ namespace VehiTrans.App.Persistencia
         Conductor UpdateConductor(Conductor conductor);
         void DeleteConductor(int idConductor);
         Conductor GetConductor(int idConductor);
+        IEnumerable<Conductor> BuscarConductor(string filtro);
 
     }
 }

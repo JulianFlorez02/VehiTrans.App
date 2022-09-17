@@ -1,0 +1,53 @@
+﻿@page
+@model VehiTrans.App.Frontend.Pages.AuxiliarModel
+@{
+}
+<h2>Lista de Auxiliares</h2>
+
+<a asp-page="./RegAuxiliar" class="btn btn-primary">Registrar</a>
+
+<br><br>
+
+<form method="get">
+    <div class="form-group">
+        <p>
+            Auxiliar: <input type="text" name="filtroBusqueda" asp-for="FiltroBusqueda"/>
+            <input type="submit" value="Filtrar" class="btn btn-primary"/>
+        </p>
+    </div>
+</form>
+
+<table class="table mt-5">
+    <thead>
+        <tr>
+            <th scope="col">Documento</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellidos</th>
+            <th scope="col">Telefono</th>
+            <th scope="col">Direccion</th>
+            <th scope="col"></th>
+            
+        </tr>
+    </thead>
+    @foreach (var Auxiliar in Model.ListaAuxiliars)
+    {
+        <tr>
+            <td>@Auxiliar.Documento</td>
+            <td>@Auxiliar.Nombre</td>
+            <td>@Auxiliar.Apellidos</td>
+            <td>@Auxiliar.Telefono</td>
+            <td>@Auxiliar.Direccion</td>
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./EditAuxiliar" asp-route-AuxiliarId="@Auxiliar.AuxiliarId">
+                    <i class="fas fa-address-book fa-lg" aria-hidden="true"> </i>
+                    Editar
+                </a>
+            </td>
+            <td>
+                <form method="post" asp-page-handler="Delete" asp-route-id="@Auxiliar.AuxiliarId">
+                    <button class="btn btn-danger">Borrar</button>
+                </form>
+            </td>
+        </tr>
+    }
+</table>

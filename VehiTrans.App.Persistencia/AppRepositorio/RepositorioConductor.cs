@@ -69,13 +69,19 @@ namespace VehiTrans.App.Persistencia
                 ConductorEncontrado.Contraseña = conductor.Contraseña;
                 ConductorEncontrado.Licencia = conductor.Licencia;
                 ConductorEncontrado.Direccion = conductor.Direccion;
-                ConductorEncontrado.NivelEstudio = conductor.NivelEstudio;
+                ConductorEncontrado.TipoEstudioId = conductor.TipoEstudioId;
+                ConductorEncontrado.TipoEstudio = conductor.TipoEstudio;
 
                 _appContext.SaveChanges();
 
             }
             return ConductorEncontrado;
 
+        }
+
+        IEnumerable<Conductor> IRepositorioConductor.BuscarConductor(string filtro = null) // la asignación filtro=null indica que el parámetro filtro es opcional
+        {
+            return _appContext.Conductores.Where(m => m.Documento.Contains(filtro) || m.Nombre.Contains(filtro) || m.Apellidos.Contains(filtro));
         }
 
     }

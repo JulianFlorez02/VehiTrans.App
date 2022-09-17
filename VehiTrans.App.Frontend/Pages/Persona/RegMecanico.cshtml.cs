@@ -24,8 +24,8 @@ namespace VehiTrans.App.Frontend.Pages
             {
                 return Page();
             }
-
-            _repoMecanico.AddMecanico(NewMecanico);
+            Console.WriteLine("Borrando web: "+ NewMecanico.TipoEstudioId);
+            //_repoMecanico.AddMecanico(NewMecanico);
             return Page();
         }
     }

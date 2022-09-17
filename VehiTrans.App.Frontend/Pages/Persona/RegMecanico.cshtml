@@ -50,7 +50,7 @@
         <select name="TipoEstudio" class="form-control">
             @foreach (var TipoEstudio in Model.ListaTipoEstudio)
             {
-                <option asp-for="@TipoEstudio.TipoEstudioId" value="@TipoEstudio.TipoEstudioId">@TipoEstudio.Descripcion</option>
+                <option asp-for="NewMecanico.TipoEstudioId" value="@TipoEstudio.TipoEstudioId">@TipoEstudio.Descripcion</option>
             }
             
         </select>

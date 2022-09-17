@@ -12,7 +12,7 @@ using VehiTrans.App.Persistencia;
 namespace VehiTrans.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContext))]
-    [Migration("20220916034710_Inicial")]
+    [Migration("20220917041309_Inicial")]
     partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -119,19 +119,21 @@ namespace VehiTrans.App.Persistencia.Migrations
                     b.Property<string>("Licencia")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("NivelEstudio")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Nombre")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Telefono")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("TipoEstudioId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Usuario")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ConductorId");
+
+                    b.HasIndex("TipoEstudioId");
 
                     b.ToTable("Conductores");
                 });
@@ -457,6 +459,17 @@ namespace VehiTrans.App.Persistencia.Migrations
                     b.Navigation("Repuestos");
 
                     b.Navigation("revision");
+                });
+
+            modelBuilder.Entity("VehiTrans.App.Dominio.Conductor", b =>
+                {
+                    b.HasOne("VehiTrans.App.Dominio.TipoEstudio", "TipoEstudio")
+                        .WithMany()
+                        .HasForeignKey("TipoEstudioId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("TipoEstudio");
                 });
 
             modelBuilder.Entity("VehiTrans.App.Dominio.Mecanico", b =>

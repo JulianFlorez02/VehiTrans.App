@@ -1,0 +1,57 @@
+﻿@page
+@model VehiTrans.App.Frontend.Pages.ConductorModel
+@{
+}
+<h2>Lista de Conductores</h2>
+
+<a asp-page="./RegConductor" class="btn btn-primary">Registrar</a>
+
+<br><br>
+
+<form method="get">
+    <div class="form-group">
+        <p>
+            Conductor: <input type="text" name="filtroBusqueda" asp-for="FiltroBusqueda"/>
+            <input type="submit" value="Filtrar" class="btn btn-primary"/>
+        </p>
+    </div>
+</form>
+
+<table class="table mt-5">
+    <thead>
+        <tr>
+            <th scope="col">Documento</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellidos</th>
+            <th scope="col">Telefono</th>
+            <th scope="col">Licencia</th>
+            <th scope="col">Direccion</th>
+            <th scope="col">NivelEstudio</th>
+            <th scope="col"></th>
+            
+        </tr>
+    </thead>
+    @foreach (var Conductor in Model.ListaConductors)
+    {
+        <tr>
+            <td>@Conductor.Documento</td>
+            <td>@Conductor.Nombre</td>
+            <td>@Conductor.Apellidos</td>
+            <td>@Conductor.Telefono</td>
+            <td>@Conductor.Licencia</td>
+            <td>@Conductor.Direccion</td>
+            <td>@Model.TipoEstdudioText(Conductor.ConductorId)</td>
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./EditConductor" asp-route-ConductorId="@Conductor.ConductorId">
+                    <i class="fas fa-address-book fa-lg" aria-hidden="true"> </i>
+                    Editar
+                </a>
+            </td>
+            <td>
+                <form method="post" asp-page-handler="Delete" asp-route-id="@Conductor.ConductorId">
+                    <button class="btn btn-danger">Borrar</button>
+                </form>
+            </td>
+        </tr>
+    }
+</table>

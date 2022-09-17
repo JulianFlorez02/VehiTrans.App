@@ -76,6 +76,11 @@ namespace VehiTrans.App.Persistencia
 
         }
 
+        IEnumerable<Auxiliar> IRepositorioAuxiliar.BuscarAuxiliar(string filtro = null) // la asignación filtro=null indica que el parámetro filtro es opcional
+        {
+            return _appContext.Auxiliares.Where(m => m.Documento.Contains(filtro) || m.Nombre.Contains(filtro) || m.Apellidos.Contains(filtro));
+        }
+
     }
 
 }
