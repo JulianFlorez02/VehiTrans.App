@@ -9,7 +9,7 @@ namespace VehiTrans.App.Frontend.Pages
     {
         private static IRepositorioMecanico _repoMecanico= new RepositorioMecanico(new Persistencia.AppContext());
         private static IRepositorioTipoEstudio _repoTipoEstudio = new RepositorioTipoEstudio(new Persistencia.AppContext());
-        public IEnumerable<TipoEstudio> ListaTipoEstudio {get; set;}
+        public IEnumerable<TipoEstudio>? ListaTipoEstudio {get; set;}
         [BindProperty]
         public Mecanico? EditMecanico{get;set;}
         public IActionResult OnGet(int? MecanicoId)

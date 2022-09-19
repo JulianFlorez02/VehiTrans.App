@@ -9,7 +9,7 @@ namespace VehiTrans.App.Frontend.Pages
     {
         private static IRepositorioMecanico _repoMecanico= new RepositorioMecanico(new Persistencia.AppContext());
         private static IRepositorioTipoEstudio _repoTipoEstudio = new RepositorioTipoEstudio(new Persistencia.AppContext());
-        public IEnumerable<TipoEstudio> ListaTipoEstudio {get; set;}
+        public IEnumerable<TipoEstudio>? ListaTipoEstudio {get;set;}
 
         [BindProperty]
         public Mecanico NewMecanico { get; set; } = new();
@@ -25,7 +25,7 @@ namespace VehiTrans.App.Frontend.Pages
                 return Page();
             }
             Console.WriteLine("Borrando web: "+ NewMecanico.TipoEstudioId);
-            //_repoMecanico.AddMecanico(NewMecanico);
+            _repoMecanico.AddMecanico(NewMecanico);
             return Page();
         }
     }

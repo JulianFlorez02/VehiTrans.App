@@ -2,3 +2,56 @@
 @model VehiTrans.App.Frontend.Pages.EditConductorModel
 @{
 }
+<h2>Editar Conductor</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="EditConductor.ConductorId">
+    <div class="form-group">
+        <label asp-for="EditConductor.Documento">Documento:</label>
+        <input asp-for="EditConductor.Documento" class="form-control">
+        <span class="text-danger" asp-validation-for="EditConductor.Documento"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="EditConductor.Nombre">Nombre:</label>
+        <input asp-for="EditConductor.Nombre" class="form-control">
+        <span class="text-danger" asp-validation-for="EditConductor.Nombre"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="EditConductor.Apellidos">Apellidos:</label>
+        <input asp-for="EditConductor.Apellidos" class="form-control">
+        <span class="text-danger" asp-validation-for="EditConductor.Apellidos"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="EditConductor.Telefono">Telefono:</label>
+        <input asp-for="EditConductor.Telefono" class="form-control">
+        <span class="text-danger" asp-validation-for="EditConductor.Telefono"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="EditConductor.FechaNacimiento">Fecha de Nacimiento:</label>
+        <input type="date" asp-for="EditConductor.FechaNacimiento" class="form-control">
+        <span class="text-danger" asp-validation-for="EditConductor.FechaNacimiento"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="EditConductor.Usuario">Usuario:</label>
+        <input asp-for="EditConductor.Usuario" class="form-control">
+        <span class="text-danger" asp-validation-for="EditConductor.Usuario"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="EditConductor.Contraseña">Contraseña:</label>
+        <input type="password" asp-for="EditConductor.Contraseña" class="form-control">
+        <span class="text-danger" asp-validation-for="EditConductor.Contraseña"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="EditConductor.Direccion">Dirección:</label>
+        <input asp-for="EditConductor.Direccion" class="form-control">
+        <span class="text-danger" asp-validation-for="EditConductor.Direccion"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="EditConductor.TipoEstudio">Nivel de estudio:</label>
+        <input asp-for="EditConductor.TipoEstudio" class="form-control">
+        <span class="text-danger" asp-validation-for="EditConductor.TipoEstudio"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Editar</button>
+</form>
+
+<a asp-page="./Conductor" class="btn-default">Lista</a>

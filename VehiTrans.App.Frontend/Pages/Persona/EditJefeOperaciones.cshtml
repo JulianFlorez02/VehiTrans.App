@@ -2,3 +2,51 @@
 @model VehiTrans.App.Frontend.Pages.EditJefeOperacionesModel
 @{
 }
+<h2>Editar JefeOperaciones</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="EditJefeOperaciones.JefeOperacionesId">
+    <div class="form-group">
+        <label asp-for="EditJefeOperaciones.Documento">Documento:</label>
+        <input asp-for="EditJefeOperaciones.Documento" class="form-control">
+        <span class="text-danger" asp-validation-for="EditJefeOperaciones.Documento"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="EditJefeOperaciones.Nombre">Nombre:</label>
+        <input asp-for="EditJefeOperaciones.Nombre" class="form-control">
+        <span class="text-danger" asp-validation-for="EditJefeOperaciones.Nombre"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="EditJefeOperaciones.Apellidos">Apellidos:</label>
+        <input asp-for="EditJefeOperaciones.Apellidos" class="form-control">
+        <span class="text-danger" asp-validation-for="EditJefeOperaciones.Apellidos"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="EditJefeOperaciones.Telefono">Telefono:</label>
+        <input asp-for="EditJefeOperaciones.Telefono" class="form-control">
+        <span class="text-danger" asp-validation-for="EditJefeOperaciones.Telefono"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="EditJefeOperaciones.FechaNacimiento">Fecha de Nacimiento:</label>
+        <input type="date" asp-for="EditJefeOperaciones.FechaNacimiento" class="form-control">
+        <span class="text-danger" asp-validation-for="EditJefeOperaciones.FechaNacimiento"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="EditJefeOperaciones.Usuario">Usuario:</label>
+        <input asp-for="EditJefeOperaciones.Usuario" class="form-control">
+        <span class="text-danger" asp-validation-for="EditJefeOperaciones.Usuario"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="EditJefeOperaciones.Contraseña">Contraseña:</label>
+        <input type="password" asp-for="EditJefeOperaciones.Contraseña" class="form-control">
+        <span class="text-danger" asp-validation-for="EditJefeOperaciones.Contraseña"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="EditJefeOperaciones.Correo">Correo:</label>
+        <input asp-for="EditJefeOperaciones.Correo" class="form-control">
+        <span class="text-danger" asp-validation-for="EditJefeOperaciones.Correo"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Editar</button>
+</form>
+
+<a asp-page="./JefeOperaciones" class="btn-default">Lista</a>

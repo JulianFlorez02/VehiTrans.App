@@ -2,3 +2,51 @@
 @model VehiTrans.App.Frontend.Pages.RegJefeOperacionesModel
 @{
 }
+<h2>Newar JefeOperaciones</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="NewJefeOperaciones.JefeOperacionesId">
+    <div class="form-group">
+        <label asp-for="NewJefeOperaciones.Documento">Documento:</label>
+        <input asp-for="NewJefeOperaciones.Documento" class="form-control">
+        <span class="text-danger" asp-validation-for="NewJefeOperaciones.Documento"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="NewJefeOperaciones.Nombre">Nombre:</label>
+        <input asp-for="NewJefeOperaciones.Nombre" class="form-control">
+        <span class="text-danger" asp-validation-for="NewJefeOperaciones.Nombre"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="NewJefeOperaciones.Apellidos">Apellidos:</label>
+        <input asp-for="NewJefeOperaciones.Apellidos" class="form-control">
+        <span class="text-danger" asp-validation-for="NewJefeOperaciones.Apellidos"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="NewJefeOperaciones.Telefono">Telefono:</label>
+        <input asp-for="NewJefeOperaciones.Telefono" class="form-control">
+        <span class="text-danger" asp-validation-for="NewJefeOperaciones.Telefono"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="NewJefeOperaciones.FechaNacimiento">Fecha de Nacimiento:</label>
+        <input type="date" asp-for="NewJefeOperaciones.FechaNacimiento" class="form-control">
+        <span class="text-danger" asp-validation-for="NewJefeOperaciones.FechaNacimiento"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="NewJefeOperaciones.Usuario">Usuario:</label>
+        <input asp-for="NewJefeOperaciones.Usuario" class="form-control">
+        <span class="text-danger" asp-validation-for="NewJefeOperaciones.Usuario"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="NewJefeOperaciones.Contraseña">Contraseña:</label>
+        <input type="password" asp-for="NewJefeOperaciones.Contraseña" class="form-control">
+        <span class="text-danger" asp-validation-for="NewJefeOperaciones.Contraseña"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="NewJefeOperaciones.Correo">Correo:</label>
+        <input asp-for="NewJefeOperaciones.Correo" class="form-control">
+        <span class="text-danger" asp-validation-for="NewJefeOperaciones.Correo"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Registrar</button>
+</form>
+
+<a asp-page="./JefeOperaciones" class="btn-default">Lista</a>

@@ -69,7 +69,6 @@ namespace VehiTrans.App.Persistencia
                 ConductorEncontrado.Contraseña = conductor.Contraseña;
                 ConductorEncontrado.Licencia = conductor.Licencia;
                 ConductorEncontrado.Direccion = conductor.Direccion;
-                ConductorEncontrado.TipoEstudioId = conductor.TipoEstudioId;
                 ConductorEncontrado.TipoEstudio = conductor.TipoEstudio;
 
                 _appContext.SaveChanges();

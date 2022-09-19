@@ -2,3 +2,51 @@
 @model VehiTrans.App.Frontend.Pages.RegAuxiliarModel
 @{
 }
+<h2>Registrar Auxiliar</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="NewAuxiliar.AuxiliarId">
+    <div class="form-group">
+        <label asp-for="NewAuxiliar.Documento">Documento:</label>
+        <input asp-for="NewAuxiliar.Documento" class="form-control">
+        <span class="text-danger" asp-validation-for="NewAuxiliar.Documento"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="NewAuxiliar.Nombre">Nombre:</label>
+        <input asp-for="NewAuxiliar.Nombre" class="form-control">
+        <span class="text-danger" asp-validation-for="NewAuxiliar.Nombre"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="NewAuxiliar.Apellidos">Apellidos:</label>
+        <input asp-for="NewAuxiliar.Apellidos" class="form-control">
+        <span class="text-danger" asp-validation-for="NewAuxiliar.Apellidos"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="NewAuxiliar.Telefono">Telefono:</label>
+        <input asp-for="NewAuxiliar.Telefono" class="form-control">
+        <span class="text-danger" asp-validation-for="NewAuxiliar.Telefono"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="NewAuxiliar.FechaNacimiento">Fecha de Nacimiento:</label>
+        <input type="date" asp-for="NewAuxiliar.FechaNacimiento" class="form-control">
+        <span class="text-danger" asp-validation-for="NewAuxiliar.FechaNacimiento"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="NewAuxiliar.Usuario">Usuario:</label>
+        <input asp-for="NewAuxiliar.Usuario" class="form-control">
+        <span class="text-danger" asp-validation-for="NewAuxiliar.Usuario"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="NewAuxiliar.Contraseña">Contraseña:</label>
+        <input type="password" asp-for="NewAuxiliar.Contraseña" class="form-control">
+        <span class="text-danger" asp-validation-for="NewAuxiliar.Contraseña"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="NewAuxiliar.Direccion">Dirección:</label>
+        <input asp-for="NewAuxiliar.Direccion" class="form-control">
+        <span class="text-danger" asp-validation-for="NewAuxiliar.Direccion"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Registrar</button>
+</form>
+
+<a asp-page="./Auxiliar" class="btn-default">Lista</a>

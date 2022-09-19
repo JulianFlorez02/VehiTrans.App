@@ -2,3 +2,56 @@
 @model VehiTrans.App.Frontend.Pages.RegPropietarioModel
 @{
 }
+<h2>Registrar Conductor</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="NewPropietario.PropietarioId">
+    <div class="form-group">
+        <label asp-for="NewPropietario.Documento">Documento:</label>
+        <input asp-for="NewPropietario.Documento" class="form-control">
+        <span class="text-danger" asp-validation-for="NewPropietario.Documento"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="NewPropietario.Nombre">Nombre:</label>
+        <input asp-for="NewPropietario.Nombre" class="form-control">
+        <span class="text-danger" asp-validation-for="NewPropietario.Nombre"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="NewPropietario.Apellidos">Apellidos:</label>
+        <input asp-for="NewPropietario.Apellidos" class="form-control">
+        <span class="text-danger" asp-validation-for="NewPropietario.Apellidos"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="NewPropietario.Telefono">Telefono:</label>
+        <input asp-for="NewPropietario.Telefono" class="form-control">
+        <span class="text-danger" asp-validation-for="NewPropietario.Telefono"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="NewPropietario.FechaNacimiento">Fecha de Nacimiento:</label>
+        <input type="date" asp-for="NewPropietario.FechaNacimiento" class="form-control">
+        <span class="text-danger" asp-validation-for="NewPropietario.FechaNacimiento"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="NewPropietario.Usuario">Usuario:</label>
+        <input asp-for="NewPropietario.Usuario" class="form-control">
+        <span class="text-danger" asp-validation-for="NewPropietario.Usuario"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="NewPropietario.Contraseña">Contraseña:</label>
+        <input type="password" asp-for="NewPropietario.Contraseña" class="form-control">
+        <span class="text-danger" asp-validation-for="NewPropietario.Contraseña"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="NewPropietario.Ciudad">Ciudad:</label>
+        <input asp-for="NewPropietario.Ciudad" class="form-control">
+        <span class="text-danger" asp-validation-for="NewPropietario.Ciudad"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="NewPropietario.Correo">Correo:</label>
+        <input asp-for="NewPropietario.Correo" class="form-control">
+        <span class="text-danger" asp-validation-for="NewPropietario.Correo"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Registrar</button>
+</form>
+
+<a asp-page="./Conductor" class="btn-default">Lista</a>

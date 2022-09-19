@@ -30,6 +30,28 @@ namespace VehiTrans.App.Persistencia.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Conductores",
+                columns: table => new
+                {
+                    ConductorId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Documento = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Apellidos = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Telefono = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    FechaNacimiento = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    Usuario = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Contraseña = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Licencia = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Direccion = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    TipoEstudio = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Conductores", x => x.ConductorId);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "JefeOperaciones",
                 columns: table => new
                 {
@@ -120,34 +142,6 @@ namespace VehiTrans.App.Persistencia.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_VehiculoTipos", x => x.VehiculoTipoId);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Conductores",
-                columns: table => new
-                {
-                    ConductorId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Documento = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Apellidos = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Telefono = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    FechaNacimiento = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    Usuario = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Contraseña = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Licencia = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Direccion = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    TipoEstudioId = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Conductores", x => x.ConductorId);
-                    table.ForeignKey(
-                        name: "FK_Conductores_TipoEstudios_TipoEstudioId",
-                        column: x => x.TipoEstudioId,
-                        principalTable: "TipoEstudios",
-                        principalColumn: "TipoEstudioId",
-                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -314,11 +308,6 @@ namespace VehiTrans.App.Persistencia.Migrations
                 name: "IX_ComprasRepuestos_RevisionId",
                 table: "ComprasRepuestos",
                 column: "RevisionId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Conductores_TipoEstudioId",
-                table: "Conductores",
-                column: "TipoEstudioId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Mecanicos_TipoEstudioId",

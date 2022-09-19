@@ -31,7 +31,7 @@
             
         </tr>
     </thead>
-    @foreach (var Conductor in Model.ListaConductors)
+    @foreach (var Conductor in Model.ListaConductores)
     {
         <tr>
             <td>@Conductor.Documento</td>
@@ -40,7 +40,7 @@
             <td>@Conductor.Telefono</td>
             <td>@Conductor.Licencia</td>
             <td>@Conductor.Direccion</td>
-            <td>@Model.TipoEstdudioText(Conductor.ConductorId)</td>
+            <td>@Conductor.TipoEstudio</td>
             <td>
                 <a class="btn btn-primary table-btn" asp-page="./EditConductor" asp-route-ConductorId="@Conductor.ConductorId">
                     <i class="fas fa-address-book fa-lg" aria-hidden="true"> </i>

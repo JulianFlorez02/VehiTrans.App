@@ -8,105 +8,105 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = VehiTrans.App.Frontend
 build_property.RootNamespace = VehiTrans.App.Frontend
-build_property.ProjectDir = d:\RESPALDO JULIAN\MISION TIC\2022-PROGRAMACION\Ciclo 3\Desarrollo de Software\ProyectoFinal\VehiTrans.App\VehiTrans.App.Frontend\
+build_property.ProjectDir = D:\RESPALDO JULIAN\MISION TIC\2022-PROGRAMACION\Ciclo 3\Desarrollo de Software\ProyectoFinal\VehiTrans.App\VehiTrans.App.Frontend\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = d:\RESPALDO JULIAN\MISION TIC\2022-PROGRAMACION\Ciclo 3\Desarrollo de Software\ProyectoFinal\VehiTrans.App\VehiTrans.App.Frontend
+build_property.MSBuildProjectDirectory = D:\RESPALDO JULIAN\MISION TIC\2022-PROGRAMACION\Ciclo 3\Desarrollo de Software\ProyectoFinal\VehiTrans.App\VehiTrans.App.Frontend
 build_property._RazorSourceGeneratorDebug = 
 
-[d:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Error.cshtml]
+[D:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Index.cshtml]
+[D:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Persona/Auxiliar.cshtml]
+[D:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Persona/Auxiliar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29uYVxBdXhpbGlhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Persona/Conductor.cshtml]
+[D:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Persona/Conductor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29uYVxDb25kdWN0b3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Persona/EditAuxiliar.cshtml]
+[D:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Persona/EditAuxiliar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29uYVxFZGl0QXV4aWxpYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Persona/EditConductor.cshtml]
+[D:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Persona/EditConductor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29uYVxFZGl0Q29uZHVjdG9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Persona/EditJefeOperaciones.cshtml]
+[D:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Persona/EditJefeOperaciones.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29uYVxFZGl0SmVmZU9wZXJhY2lvbmVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Persona/EditMecanico.cshtml]
+[D:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Persona/EditMecanico.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29uYVxFZGl0TWVjYW5pY28uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Persona/EditPropietario.cshtml]
+[D:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Persona/EditPropietario.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29uYVxFZGl0UHJvcGlldGFyaW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Persona/JefeOperaciones.cshtml]
+[D:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Persona/JefeOperaciones.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29uYVxKZWZlT3BlcmFjaW9uZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Persona/Mecanico.cshtml]
+[D:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Persona/Mecanico.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29uYVxNZWNhbmljby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Persona/Propietario.cshtml]
+[D:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Persona/Propietario.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29uYVxQcm9waWV0YXJpby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Persona/RegAuxiliar.cshtml]
+[D:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Persona/RegAuxiliar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29uYVxSZWdBdXhpbGlhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Persona/RegConductor.cshtml]
+[D:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Persona/RegConductor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29uYVxSZWdDb25kdWN0b3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Persona/RegJefeOperaciones.cshtml]
+[D:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Persona/RegJefeOperaciones.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29uYVxSZWdKZWZlT3BlcmFjaW9uZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Persona/RegMecanico.cshtml]
+[D:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Persona/RegMecanico.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29uYVxSZWdNZWNhbmljby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Persona/RegPropietario.cshtml]
+[D:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Persona/RegPropietario.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29uYVxSZWdQcm9waWV0YXJpby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Privacy.cshtml]
+[D:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[D:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Vehiculos/RegVehiculos.cshtml]
+[D:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Vehiculos/RegVehiculos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVoaWN1bG9zXFJlZ1ZlaGljdWxvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Vehiculos/Vehiculos.cshtml]
+[D:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Vehiculos/Vehiculos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVoaWN1bG9zXFZlaGljdWxvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/_ViewImports.cshtml]
+[D:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/_ViewStart.cshtml]
+[D:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Shared/_Layout.cshtml]
+[D:/RESPALDO JULIAN/MISION TIC/2022-PROGRAMACION/Ciclo 3/Desarrollo de Software/ProyectoFinal/VehiTrans.App/VehiTrans.App.Frontend/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-bszkes9qxa

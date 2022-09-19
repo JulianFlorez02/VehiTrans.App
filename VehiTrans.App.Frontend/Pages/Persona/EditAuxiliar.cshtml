@@ -2,3 +2,51 @@
 @model VehiTrans.App.Frontend.Pages.EditAuxiliarModel
 @{
 }
+<h2>Editar Auxiliar</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="EditAuxiliar.AuxiliarId">
+    <div class="form-group">
+        <label asp-for="EditAuxiliar.Documento">Documento:</label>
+        <input asp-for="EditAuxiliar.Documento" class="form-control">
+        <span class="text-danger" asp-validation-for="EditAuxiliar.Documento"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="EditAuxiliar.Nombre">Nombre:</label>
+        <input asp-for="EditAuxiliar.Nombre" class="form-control">
+        <span class="text-danger" asp-validation-for="EditAuxiliar.Nombre"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="EditAuxiliar.Apellidos">Apellidos:</label>
+        <input asp-for="EditAuxiliar.Apellidos" class="form-control">
+        <span class="text-danger" asp-validation-for="EditAuxiliar.Apellidos"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="EditAuxiliar.Telefono">Telefono:</label>
+        <input asp-for="EditAuxiliar.Telefono" class="form-control">
+        <span class="text-danger" asp-validation-for="EditAuxiliar.Telefono"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="EditAuxiliar.FechaNacimiento">Fecha de Nacimiento:</label>
+        <input type="date" asp-for="EditAuxiliar.FechaNacimiento" class="form-control">
+        <span class="text-danger" asp-validation-for="EditAuxiliar.FechaNacimiento"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="EditAuxiliar.Usuario">Usuario:</label>
+        <input asp-for="EditAuxiliar.Usuario" class="form-control">
+        <span class="text-danger" asp-validation-for="EditAuxiliar.Usuario"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="EditAuxiliar.Contraseña">Contraseña:</label>
+        <input type="password" asp-for="EditAuxiliar.Contraseña" class="form-control">
+        <span class="text-danger" asp-validation-for="EditAuxiliar.Contraseña"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="EditAuxiliar.Direccion">Dirección:</label>
+        <input asp-for="EditAuxiliar.Direccion" class="form-control">
+        <span class="text-danger" asp-validation-for="EditAuxiliar.Direccion"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Editar</button>
+</form>
+
+<a asp-page="./Auxiliar" class="btn-default">Lista</a>
