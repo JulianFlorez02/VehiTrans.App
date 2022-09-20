@@ -42,14 +42,24 @@
         <span class="text-danger" asp-validation-for="EditConductor.Contraseña"></span>
     </div>
     <div class="form-group">
+        <label asp-for="EditConductor.Licencia">Licencia:</label>
+        <input asp-for="EditConductor.Licencia" class="form-control">
+        <span class="text-danger" asp-validation-for="EditConductor.Licencia"></span>
+    </div>
+    <div class="form-group">
         <label asp-for="EditConductor.Direccion">Dirección:</label>
         <input asp-for="EditConductor.Direccion" class="form-control">
         <span class="text-danger" asp-validation-for="EditConductor.Direccion"></span>
     </div>
     <div class="form-group">
         <label asp-for="EditConductor.TipoEstudio">Nivel de estudio:</label>
-        <input asp-for="EditConductor.TipoEstudio" class="form-control">
-        <span class="text-danger" asp-validation-for="EditConductor.TipoEstudio"></span>
+        <select asp-for="EditConductor.TipoEstudio" class="form-control">
+            @foreach (var TipoEstudio in Model.ListaTipoEstudio)
+            {
+                <option value="@TipoEstudio.Descripcion">@TipoEstudio.Descripcion</option>
+            }
+            
+        </select>
     </div>
     <button type="submit" class="btn btn-primary">Editar</button>
 </form>

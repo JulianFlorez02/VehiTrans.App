@@ -8,7 +8,7 @@ namespace VehiTrans.App.Frontend.Pages
     public class MecanicoModel : PageModel
     {
         private readonly IRepositorioMecanico _repoMecanico= new RepositorioMecanico(new Persistencia.AppContext());
-        private static IRepositorioTipoEstudio _repoTipoEstudio = new RepositorioTipoEstudio(new Persistencia.AppContext());
+        private readonly IRepositorioTipoEstudio _repoTipoEstudio = new RepositorioTipoEstudio(new Persistencia.AppContext());
         public IEnumerable<Mecanico> ListaMecanicos {get; set;}
         [BindProperty(SupportsGet =true)]
         public string FiltroBusqueda{get;set;}
@@ -27,10 +27,17 @@ namespace VehiTrans.App.Frontend.Pages
             //return RedirectToAction("Get");
         }
 
-         public string TipoEstdudioText(int tipoEstudioId)
+        public string TipoEstdudioText(int tipoEstudioId)
         {
             var tipoEstudio = _repoTipoEstudio.GetTipoEstudio(tipoEstudioId);
-            return tipoEstudio.Descripcion;
+            if(tipoEstudio==null)
+            {
+                return "Hola "+tipoEstudioId;
+            }else
+            {
+                return tipoEstudio.Descripcion;
+            }
+            
         }
 
         public IActionResult OnPost(int Id)

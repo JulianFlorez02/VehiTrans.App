@@ -8,6 +8,8 @@ namespace VehiTrans.App.Frontend.Pages
     public class EditConductorModel : PageModel
     {
         private static IRepositorioConductor _repoConductor= new RepositorioConductor(new Persistencia.AppContext());
+        private static IRepositorioTipoEstudio _repoTipoEstudio = new RepositorioTipoEstudio(new Persistencia.AppContext());
+        public IEnumerable<TipoEstudio>? ListaTipoEstudio {get;set;}
         [BindProperty]
         public Conductor? EditConductor{get;set;}
         public IActionResult OnGet(int? ConductorId)
@@ -15,6 +17,8 @@ namespace VehiTrans.App.Frontend.Pages
             if(ConductorId.HasValue)
             {
                 EditConductor = _repoConductor.GetConductor(ConductorId.Value);
+                ListaTipoEstudio = _repoTipoEstudio.GetAllTipoEstudios();
+                
             }
             else
             {
@@ -49,7 +53,7 @@ namespace VehiTrans.App.Frontend.Pages
             }
 
             _repoConductor.UpdateConductor(EditConductor);
-            return RedirectToAction("Get");
+            return RedirectToPage("/Persona/Conductor");
         }
     }
 }

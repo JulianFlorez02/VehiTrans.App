@@ -52,7 +52,7 @@ namespace VehiTrans.App.Frontend.Pages
             }
 
             _repoMecanico.UpdateMecanico(EditMecanico);
-            return RedirectToAction("Get");
+            return RedirectToPage("/Persona/Mecanico");
         }
     }
 }

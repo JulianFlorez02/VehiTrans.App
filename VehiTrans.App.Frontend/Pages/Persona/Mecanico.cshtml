@@ -38,7 +38,7 @@
             <td>@Mecanico.Apellidos</td>
             <td>@Mecanico.Telefono</td>
             <td>@Mecanico.Direccion</td>
-            <td>@Model.TipoEstdudioText(Mecanico.MecanicoId)</td>
+            <td>@Model.TipoEstdudioText(Mecanico.TipoEstudioId)</td>
             <td>
                 <a class="btn btn-primary table-btn" asp-page="./EditMecanico" asp-route-MecanicoId="@Mecanico.MecanicoId">
                     <i class="fas fa-address-book fa-lg" aria-hidden="true"> </i>
@@ -53,3 +53,7 @@
         </tr>
     }
 </table>
+@if(Model.ListaMecanicos.Count()==0)
+{
+    <h1>No hay datos registrados</h1>
+}

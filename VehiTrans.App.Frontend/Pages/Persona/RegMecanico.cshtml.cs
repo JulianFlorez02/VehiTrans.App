@@ -26,7 +26,7 @@ namespace VehiTrans.App.Frontend.Pages
             }
             Console.WriteLine("Borrando web: "+ NewMecanico.TipoEstudioId);
             _repoMecanico.AddMecanico(NewMecanico);
-            return Page();
+            return RedirectToPage("/Persona/Mecanico");
         }
     }
 }

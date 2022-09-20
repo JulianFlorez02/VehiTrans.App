@@ -8,11 +8,13 @@ namespace VehiTrans.App.Frontend.Pages
     public class RegConductorModel : PageModel
     {
         private static IRepositorioConductor _repoConductor= new RepositorioConductor(new Persistencia.AppContext());
-       
+        private static IRepositorioTipoEstudio _repoTipoEstudio = new RepositorioTipoEstudio(new Persistencia.AppContext());
+        public IEnumerable<TipoEstudio>? ListaTipoEstudio {get;set;}
         [BindProperty]
         public Conductor NewConductor { get; set; } = new();
         public void OnGet()
         {
+            ListaTipoEstudio = _repoTipoEstudio.GetAllTipoEstudios();
         }
 
         public IActionResult OnPost()
@@ -23,7 +25,7 @@ namespace VehiTrans.App.Frontend.Pages
             }
             //Console.WriteLine("Borrando web: "+ NewConductor.TipoEstudioId);
             _repoConductor.AddConductor(NewConductor);
-            return Page();
+            return RedirectToPage("/Persona/Conductor");
         }
     }
 }

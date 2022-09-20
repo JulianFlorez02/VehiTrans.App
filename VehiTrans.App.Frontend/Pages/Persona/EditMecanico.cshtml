@@ -48,7 +48,7 @@
     </div>
     <div class="form-group">
         <label asp-for="EditMecanico.TipoEstudioId">Nivel de estudio:</label>
-        <select asp-for="EditMecanico.TipoEstudioId">
+        <select asp-for="EditMecanico.TipoEstudioId" class="form-control">
             @foreach (var TipoEstudio in Model.ListaTipoEstudio)
             {
                 <option value="@TipoEstudio.TipoEstudioId">@TipoEstudio.Descripcion</option>
