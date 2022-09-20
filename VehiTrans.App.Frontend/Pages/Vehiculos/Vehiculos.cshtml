@@ -37,12 +37,12 @@
             <td>@Model.TipoVehiculoText(vvehiculo.VehiculoTipoId)</td>
             <td>@vvehiculo.CantidadPasajeros</td>
             <td>@vvehiculo.CilindrajeMotor</td>
-            @* <td>
-                <a class="btn btn-primary table-btn" asp-page="./EditVehiculos" asp-route-MecanicoId="@vvehiculo.VehiculoId">
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./EditVehiculos" asp-route-VehiculoId="@vvehiculo.VehiculoId">
                     <i class="fas fa-address-book fa-lg" aria-hidden="true"> </i>
                     Editar
                 </a>
-            </td> *@
+            </td>
             <td>
                 <form method="post" asp-page-handler="Delete" asp-route-id="@vvehiculo.VehiculoId">
                     <button class="btn btn-danger">Borrar</button>

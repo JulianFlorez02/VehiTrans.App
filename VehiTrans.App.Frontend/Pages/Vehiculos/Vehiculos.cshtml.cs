@@ -7,7 +7,7 @@ namespace VehiTrans.App.Frontend
 {
     public class VehiculosModel : PageModel
     { 
-        private static IRepositorioVehiculo _repoVehiculo= new RepositorioVehiculo(new Persistencia.AppContext());
+        private readonly IRepositorioVehiculo _repoVehiculo= new RepositorioVehiculo(new Persistencia.AppContext());
         private static IRepositorioVehiculoTipo _repoVehiculoTipo= new RepositorioVehiculoTipo(new Persistencia.AppContext());
         public IEnumerable<Vehiculo> ListaVehiculos {get; set;}
         public string FiltroBusqueda{get;set;}
