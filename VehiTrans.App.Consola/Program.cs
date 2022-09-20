@@ -25,7 +25,7 @@ namespace VehiTrans.App.Consola
             //AddVehiculosTipo("Buseta");
             //AddVehiculosTipo("Microbus");
             //AddVehiculo();
-            AddTipoEstudio();
+            //AddTipoEstudio();
         }
         private static void AddMecanico()
         {

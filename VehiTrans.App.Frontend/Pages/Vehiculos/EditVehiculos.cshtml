@@ -1,0 +1,81 @@
+﻿@page
+@model VehiTrans.App.Frontend.EditVehiculosModel
+@{
+      ViewData["Title"] = "DIGSOL - Editar Vehiculo";
+}
+<h1>Editar Vehiculo 🚌🚕</h1>
+<form method="post" class="card p-3">
+    <div class="row">
+        <div asp-validation-summary="All"></div>
+    </div>
+    <div class="form-group mb-0">
+        <input type="hidden" asp-for="EditVehiculo.VehiculoId">
+        <p>
+            <label asp-for="EditVehiculo.Placa">Placa:  </label>
+            <input type="text" asp-for="EditVehiculo.Placa" class="mr-5">
+             <span class="text-danger" asp-validation-for="EditVehiculo.Placa"></span>
+        </p>
+        <p>
+            <label asp-for="EditVehiculo.Marca">Marca:  </label>
+            <input type="text" asp-for="EditVehiculo.Marca" class="mr-5">
+        </p>
+        <p>
+            <label asp-for="EditVehiculo.Modelo">Modelo: </label>
+            <input type="text" asp-for="EditVehiculo.Modelo" class="mr-5">
+        </p>
+        <p>
+            <label asp-for="EditVehiculo.VehiculoTipoId">Tipo de Vehiculo: </label>
+                <select asp-for="EditVehiculo.VehiculoTipoId" class="mr-5">
+                    @foreach (var LTipoVehiculo in Model.ListaTipoVehiculo)
+                    {
+                        <option value="@LTipoVehiculo.VehiculoTipoId">@LTipoVehiculo.Descripcion</option>
+                    }
+                    
+                </select>
+            @* <input type="text" asp-for="EditVehiculo.VehiculoTipoId" class="mr-5"> *@
+        </p>
+        <p>
+            <label asp-for="EditVehiculo.CantidadPasajeros">Cantidad de Pasajeros: </label>
+            <input type="text" asp-for="EditVehiculo.CantidadPasajeros" class="mr-5">
+        </p>
+        <p>
+            <label asp-for="EditVehiculo.CilindrajeMotor">Cilindraje del Motor: </label>
+            <input type="text" asp-for="EditVehiculo.CilindrajeMotor" class="mr-5">
+        </p>
+        <p>
+            <label asp-for="EditVehiculo.PropietarioId">Propietario: </label>
+            <select asp-for="EditVehiculo.PropietarioId" class="mr-5">
+                @foreach (var LPropietario in Model.ListaPropietario)
+                {
+                    <option value="@LPropietario.PropietarioId">@LPropietario.Nombre @LPropietario.Apellidos</option>
+                }
+            </select>
+            @* <input type="text" asp-for="EditVehiculo.PropietarioId" class="mr-5"> *@
+        </p>
+        <p>
+            <label asp-for="EditVehiculo.ConductorId">Conductor: </label>
+            <select asp-for="EditVehiculo.ConductorId" class="mr-5">
+                @foreach (var LConductor in Model.ListaConductor)
+                {
+                    <option value="@LConductor.ConductorId">@LConductor.Nombre @LConductor.Apellidos</option>
+                }
+            </select>
+            @* <input type="text" asp-for="EditVehiculo.ConductorId" class="mr-5"> *@
+        </p>
+        <p>
+            <label asp-for="EditVehiculo.MecanicoId">Mecanico: </label>
+            <select asp-for="EditVehiculo.MecanicoId" class="mr-5">
+                @foreach (var LMecanico in Model.ListaMecanico)
+                {
+                    <option value="@LMecanico.MecanicoId">@LMecanico.Nombre @LMecanico.Apellidos</option>
+                }
+            </select>
+            @* <input type="text" asp-for="EditVehiculo.MecanicoId" class="mr-5"> *@
+        </p>
+
+
+        <button type="submit" class="btn btn-primary">Actualizar</button>
+    </div>
+</form>
+
+<a asp-page="./Vehiculos" class="btn-default">Lista de Vehiculos</a>

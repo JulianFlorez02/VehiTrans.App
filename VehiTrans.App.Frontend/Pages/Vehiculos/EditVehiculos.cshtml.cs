@@ -5,9 +5,9 @@ using VehiTrans.App.Persistencia;
 
 namespace VehiTrans.App.Frontend
 {
-    public class RegVehiculosModel : PageModel
+    public class EditVehiculosModel : PageModel
     {
-        private readonly IRepositorioVehiculo _repoVehiculo= new RepositorioVehiculo(new Persistencia.AppContext());
+         private readonly IRepositorioVehiculo _repoVehiculo= new RepositorioVehiculo(new Persistencia.AppContext());
         private readonly IRepositorioVehiculoTipo _repoVehiculoTipo= new RepositorioVehiculoTipo(new Persistencia.AppContext());
         public IEnumerable<VehiculoTipo>? ListaTipoVehiculo {get;set;}
         private readonly IRepositorioPropietario _repoPropietario= new RepositorioPropietario(new Persistencia.AppContext());
@@ -18,13 +18,23 @@ namespace VehiTrans.App.Frontend
         public IEnumerable<Mecanico>? ListaMecanico {get;set;}
 
         [BindProperty]
-        public Vehiculo NewVehiculo { get; set; } = new();
-        public void OnGet()
+        public Vehiculo EditVehiculo { get; set; } = new();
+        public IActionResult OnGet(int? VehiculoId)
         {
-             ListaTipoVehiculo = _repoVehiculoTipo.GetAllVehiculoTipos();
-             ListaPropietario = _repoPropietario.GetAllPropietario();
-             ListaConductor = _repoConductor.GetAllConductores();
-             ListaMecanico = _repoMecanico.GetAllMecanicos();
+            if(VehiculoId.HasValue)
+            {
+                EditVehiculo = _repoVehiculo.GetVehiculo(VehiculoId.Value);
+                ListaTipoVehiculo = _repoVehiculoTipo.GetAllVehiculoTipos();
+                ListaPropietario = _repoPropietario.GetAllPropietario();
+                ListaConductor = _repoConductor.GetAllConductores();
+                ListaMecanico = _repoMecanico.GetAllMecanicos();
+            }
+            if(EditVehiculo==null)
+            {
+                return RedirectToPage("./NotFound");
+            }
+            else
+            return Page();
         }
 
         public IActionResult OnPost()
@@ -34,9 +44,8 @@ namespace VehiTrans.App.Frontend
                 return Page();
             }
 
-            _repoVehiculo.AddVehiculo(NewVehiculo);
+            _repoVehiculo.UpdateVehiculo(EditVehiculo);
             return RedirectToPage("./Vehiculos");
-            // return Page();
         }
     }
 }

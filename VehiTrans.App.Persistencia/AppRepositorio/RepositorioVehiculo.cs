@@ -79,6 +79,11 @@ namespace VehiTrans.App.Persistencia
 
         }
 
+        IEnumerable<Vehiculo> IRepositorioVehiculo.BuscarVehiculo(string filtro = null) // la asignación filtro=null indica que el parámetro filtro es opcional
+        {
+            return _appContext.Vehiculos.Where(m => m.Placa.Contains(filtro) || m.Marca.Contains(filtro) || m.Modelo.Contains(filtro));
+        }
+
     }
 
 }

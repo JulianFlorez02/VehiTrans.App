@@ -2051,19 +2051,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\USUARIO\\.nuget\\packages\\": {}
+    "C:\\Users\\Belen_Umbria_W8\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\RESPALDO JULIAN\\MISION TIC\\2022-PROGRAMACION\\Ciclo 3\\Desarrollo de Software\\ProyectoFinal\\VehiTrans.App\\VehiTrans.App.Consola\\VehiTrans.App.Consola.csproj",
+      "projectUniqueName": "C:\\MINTIC\\VehiTrans.App\\VehiTrans.App.Consola\\VehiTrans.App.Consola.csproj",
       "projectName": "VehiTrans.App.Consola",
-      "projectPath": "D:\\RESPALDO JULIAN\\MISION TIC\\2022-PROGRAMACION\\Ciclo 3\\Desarrollo de Software\\ProyectoFinal\\VehiTrans.App\\VehiTrans.App.Consola\\VehiTrans.App.Consola.csproj",
-      "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-      "outputPath": "D:\\RESPALDO JULIAN\\MISION TIC\\2022-PROGRAMACION\\Ciclo 3\\Desarrollo de Software\\ProyectoFinal\\VehiTrans.App\\VehiTrans.App.Consola\\obj\\",
+      "projectPath": "C:\\MINTIC\\VehiTrans.App\\VehiTrans.App.Consola\\VehiTrans.App.Consola.csproj",
+      "packagesPath": "C:\\Users\\Belen_Umbria_W8\\.nuget\\packages\\",
+      "outputPath": "C:\\MINTIC\\VehiTrans.App\\VehiTrans.App.Consola\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Belen_Umbria_W8\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -2075,11 +2075,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\RESPALDO JULIAN\\MISION TIC\\2022-PROGRAMACION\\Ciclo 3\\Desarrollo de Software\\ProyectoFinal\\VehiTrans.App\\VehiTrans.App.Dominio\\VehiTrans.App.Dominio.csproj": {
-              "projectPath": "D:\\RESPALDO JULIAN\\MISION TIC\\2022-PROGRAMACION\\Ciclo 3\\Desarrollo de Software\\ProyectoFinal\\VehiTrans.App\\VehiTrans.App.Dominio\\VehiTrans.App.Dominio.csproj"
+            "C:\\MINTIC\\VehiTrans.App\\VehiTrans.App.Dominio\\VehiTrans.App.Dominio.csproj": {
+              "projectPath": "C:\\MINTIC\\VehiTrans.App\\VehiTrans.App.Dominio\\VehiTrans.App.Dominio.csproj"
             },
-            "D:\\RESPALDO JULIAN\\MISION TIC\\2022-PROGRAMACION\\Ciclo 3\\Desarrollo de Software\\ProyectoFinal\\VehiTrans.App\\VehiTrans.App.Persistencia\\VehiTrans.App.Persistencia.csproj": {
-              "projectPath": "D:\\RESPALDO JULIAN\\MISION TIC\\2022-PROGRAMACION\\Ciclo 3\\Desarrollo de Software\\ProyectoFinal\\VehiTrans.App\\VehiTrans.App.Persistencia\\VehiTrans.App.Persistencia.csproj"
+            "C:\\MINTIC\\VehiTrans.App\\VehiTrans.App.Persistencia\\VehiTrans.App.Persistencia.csproj": {
+              "projectPath": "C:\\MINTIC\\VehiTrans.App\\VehiTrans.App.Persistencia\\VehiTrans.App.Persistencia.csproj"
             }
           }
         }
@@ -2131,7 +2131,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

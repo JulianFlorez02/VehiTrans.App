@@ -15,3 +15,20 @@ D:\RESPALDO JULIAN\MISION TIC\2022-PROGRAMACION\Ciclo 3\Desarrollo de Software\P
 D:\RESPALDO JULIAN\MISION TIC\2022-PROGRAMACION\Ciclo 3\Desarrollo de Software\ProyectoFinal\VehiTrans.App\VehiTrans.App.Persistencia\obj\Debug\net6.0\VehiTrans.App.Persistencia.pdb
 D:\RESPALDO JULIAN\MISION TIC\2022-PROGRAMACION\Ciclo 3\Desarrollo de Software\ProyectoFinal\VehiTrans.App\VehiTrans.App.Persistencia\obj\Debug\net6.0\VehiTrans.App.Persistencia.genruntimeconfig.cache
 D:\RESPALDO JULIAN\MISION TIC\2022-PROGRAMACION\Ciclo 3\Desarrollo de Software\ProyectoFinal\VehiTrans.App\VehiTrans.App.Persistencia\obj\Debug\net6.0\ref\VehiTrans.App.Persistencia.dll
+C:\MINTIC\VehiTrans.App\VehiTrans.App.Persistencia\bin\Debug\net6.0\VehiTrans.App.Persistencia.deps.json
+C:\MINTIC\VehiTrans.App\VehiTrans.App.Persistencia\bin\Debug\net6.0\VehiTrans.App.Persistencia.runtimeconfig.json
+C:\MINTIC\VehiTrans.App\VehiTrans.App.Persistencia\bin\Debug\net6.0\VehiTrans.App.Persistencia.dll
+C:\MINTIC\VehiTrans.App\VehiTrans.App.Persistencia\bin\Debug\net6.0\VehiTrans.App.Persistencia.pdb
+C:\MINTIC\VehiTrans.App\VehiTrans.App.Persistencia\bin\Debug\net6.0\VehiTrans.App.Dominio.dll
+C:\MINTIC\VehiTrans.App\VehiTrans.App.Persistencia\bin\Debug\net6.0\VehiTrans.App.Dominio.pdb
+C:\MINTIC\VehiTrans.App\VehiTrans.App.Persistencia\obj\Debug\net6.0\VehiTrans.App.Persistencia.csproj.AssemblyReference.cache
+C:\MINTIC\VehiTrans.App\VehiTrans.App.Persistencia\obj\Debug\net6.0\VehiTrans.App.Persistencia.GeneratedMSBuildEditorConfig.editorconfig
+C:\MINTIC\VehiTrans.App\VehiTrans.App.Persistencia\obj\Debug\net6.0\VehiTrans.App.Persistencia.AssemblyInfoInputs.cache
+C:\MINTIC\VehiTrans.App\VehiTrans.App.Persistencia\obj\Debug\net6.0\VehiTrans.App.Persistencia.AssemblyInfo.cs
+C:\MINTIC\VehiTrans.App\VehiTrans.App.Persistencia\obj\Debug\net6.0\VehiTrans.App.Persistencia.csproj.CoreCompileInputs.cache
+C:\MINTIC\VehiTrans.App\VehiTrans.App.Persistencia\obj\Debug\net6.0\VehiTrans.App.Persistencia.csproj.CopyComplete
+C:\MINTIC\VehiTrans.App\VehiTrans.App.Persistencia\obj\Debug\net6.0\VehiTrans.App.Persistencia.dll
+C:\MINTIC\VehiTrans.App\VehiTrans.App.Persistencia\obj\Debug\net6.0\refint\VehiTrans.App.Persistencia.dll
+C:\MINTIC\VehiTrans.App\VehiTrans.App.Persistencia\obj\Debug\net6.0\VehiTrans.App.Persistencia.pdb
+C:\MINTIC\VehiTrans.App\VehiTrans.App.Persistencia\obj\Debug\net6.0\VehiTrans.App.Persistencia.genruntimeconfig.cache
+C:\MINTIC\VehiTrans.App\VehiTrans.App.Persistencia\obj\Debug\net6.0\ref\VehiTrans.App.Persistencia.dll

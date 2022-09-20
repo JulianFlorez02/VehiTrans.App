@@ -13,5 +13,6 @@ namespace VehiTrans.App.Persistencia
         Vehiculo UpdateVehiculo(Vehiculo vvehiculo);
         void DeleteVehiculo(int vvehiculoId);
         Vehiculo GetVehiculo(int vvehiculoId);
+        IEnumerable<Vehiculo> BuscarVehiculo(string filtro);
     }
 }

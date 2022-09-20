@@ -1,10 +1,21 @@
 ﻿@page
 @model VehiTrans.App.Frontend.VehiculosModel
 @{
+    ViewData["Title"] = "DIGSOL - Lista de Vehiculos";
 }
 <h1>Lista de Vehiculos</h1>
 <a asp-page="./RegVehiculos" class="btn btn-primary">Registrar Vehiculo</a>
-<br>
+
+<br><br>
+
+<form method="get">
+    <div class="form-group">
+        <p>
+            Vehiculo: <input type="text" name="filtroBusqueda" asp-for="FiltroBusqueda"/>
+            <input type="submit" value="Filtrar" class="btn btn-primary"/>
+        </p>
+    </div>
+</form>
 
 <table class="table mt-5">
     <thead>
@@ -26,6 +37,12 @@
             <td>@Model.TipoVehiculoText(vvehiculo.VehiculoTipoId)</td>
             <td>@vvehiculo.CantidadPasajeros</td>
             <td>@vvehiculo.CilindrajeMotor</td>
+            @* <td>
+                <a class="btn btn-primary table-btn" asp-page="./EditVehiculos" asp-route-MecanicoId="@vvehiculo.VehiculoId">
+                    <i class="fas fa-address-book fa-lg" aria-hidden="true"> </i>
+                    Editar
+                </a>
+            </td> *@
             <td>
                 <form method="post" asp-page-handler="Delete" asp-route-id="@vvehiculo.VehiculoId">
                     <button class="btn btn-danger">Borrar</button>
@@ -35,3 +52,7 @@
     }
 </table>
 
+@if(Model.ListaVehiculos.Count()==0)
+{
+    <h1>No hay Vehiculos registrados</h1>
+}

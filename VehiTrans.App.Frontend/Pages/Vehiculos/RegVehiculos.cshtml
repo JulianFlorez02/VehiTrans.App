@@ -12,6 +12,7 @@
         <p>
             <label asp-for="NewVehiculo.Placa">Placa:  </label>
             <input type="text" asp-for="NewVehiculo.Placa" class="mr-5">
+             <span class="text-danger" asp-validation-for="NewVehiculo.Placa"></span>
         </p>
         <p>
             <label asp-for="NewVehiculo.Marca">Marca:  </label>
@@ -23,7 +24,14 @@
         </p>
         <p>
             <label asp-for="NewVehiculo.VehiculoTipoId">Tipo de Vehiculo: </label>
-            <input type="text" asp-for="NewVehiculo.VehiculoTipoId" class="mr-5">
+                <select asp-for="NewVehiculo.VehiculoTipoId" class="mr-5">
+                    @foreach (var LTipoVehiculo in Model.ListaTipoVehiculo)
+                    {
+                        <option value="@LTipoVehiculo.VehiculoTipoId">@LTipoVehiculo.Descripcion</option>
+                    }
+                    
+                </select>
+            @* <input type="text" asp-for="NewVehiculo.VehiculoTipoId" class="mr-5"> *@
         </p>
         <p>
             <label asp-for="NewVehiculo.CantidadPasajeros">Cantidad de Pasajeros: </label>
@@ -34,25 +42,37 @@
             <input type="text" asp-for="NewVehiculo.CilindrajeMotor" class="mr-5">
         </p>
         <p>
-            <label asp-for="NewVehiculo.PropietarioId">PropietarioId</label>
-            <input type="text" asp-for="NewVehiculo.PropietarioId" class="mr-5">
+            <label asp-for="NewVehiculo.PropietarioId">Propietario: </label>
+            <select asp-for="NewVehiculo.PropietarioId" class="mr-5">
+                @foreach (var LPropietario in Model.ListaPropietario)
+                {
+                    <option value="@LPropietario.PropietarioId">@LPropietario.Nombre @LPropietario.Apellidos</option>
+                }
+            </select>
+            @* <input type="text" asp-for="NewVehiculo.PropietarioId" class="mr-5"> *@
         </p>
         <p>
-            <label asp-for="NewVehiculo.ConductorId">ConductorId</label>
-            <input type="text" asp-for="NewVehiculo.ConductorId" class="mr-5">
+            <label asp-for="NewVehiculo.ConductorId">Conductor: </label>
+            <select asp-for="NewVehiculo.ConductorId" class="mr-5">
+                @foreach (var LConductor in Model.ListaConductor)
+                {
+                    <option value="@LConductor.ConductorId">@LConductor.Nombre @LConductor.Apellidos</option>
+                }
+            </select>
+            @* <input type="text" asp-for="NewVehiculo.ConductorId" class="mr-5"> *@
         </p>
         <p>
-            <label asp-for="NewVehiculo.MecanicoId">MecanicoId</label>
-            <input type="text" asp-for="NewVehiculo.MecanicoId" class="mr-5">
+            <label asp-for="NewVehiculo.MecanicoId">Mecanico: </label>
+            <select asp-for="NewVehiculo.MecanicoId" class="mr-5">
+                @foreach (var LMecanico in Model.ListaMecanico)
+                {
+                    <option value="@LMecanico.MecanicoId">@LMecanico.Nombre @LMecanico.Apellidos</option>
+                }
+            </select>
+            @* <input type="text" asp-for="NewVehiculo.MecanicoId" class="mr-5"> *@
         </p>
 
 
-        @* <label asp-for="NewVehiculo.Size">Size</label>
-        <select asp-for="NewVehiculo.Size" asp-items="Html.GetEnumSelectList<PizzaSize>()" class="mr-5"></select>
-        <label asp-for="NewVehiculo.Price"></label>
-        <input asp-for="NewVehiculo.Price" class="mr-5" />
-        <label asp-for="NewVehiculo.IsGlutenFree">Gluten Free</label>
-        <input type="checkbox" asp-for="NewVehiculo.IsGlutenFree" class="mr-5"> *@
         <button type="submit" class="btn btn-primary">Addicionar</button>
     </div>
 </form>
