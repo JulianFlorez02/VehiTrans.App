@@ -3,11 +3,10 @@
 @{
     ViewData["Title"] = "DIGSOL - Lista de Vehiculos";
 }
-<h1>Lista de Vehiculos</h1>
+<h1>Lista de Vehiculos  🚌🚕 </h1>
 <a asp-page="./RegVehiculos" class="btn btn-primary">Registrar Vehiculo</a>
-
-<br><br>
-
+<br>
+<hr class="border border-primary border-3 opacity-75">
 <form method="get">
     <div class="form-group">
         <p>
@@ -16,6 +15,8 @@
         </p>
     </div>
 </form>
+
+<hr class="border border-primary border-3 opacity-75">
 
 <table class="table mt-5">
     <thead>
@@ -26,6 +27,8 @@
             <th scope="col">Tipo</th>
             <th scope="col">Pasajeros</th>
             <th scope="col">Motor</th>
+            <th scope="col">Editar</th>
+            <th scope="col">Borrar</th>
         </tr>
     </thead>
     @foreach (var vvehiculo in Model.ListaVehiculos)
