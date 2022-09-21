@@ -3,18 +3,19 @@
 @{
       ViewData["Title"] = "DIGSOL - Editar Vehiculo";
 }
-<h1>Editar Vehiculo 🚌🚕</h1>
+<h1>Editar Vehiculo 🚌🚕    PLACA:  @Model.EditVehiculo.Placa</h1>
 <form method="post" class="card p-3">
     <div class="row">
         <div asp-validation-summary="All"></div>
     </div>
     <div class="form-group mb-0">
         <input type="hidden" asp-for="EditVehiculo.VehiculoId">
-        <p>
+        @* <p>
             <label asp-for="EditVehiculo.Placa">Placa:  </label>
             <input type="text" asp-for="EditVehiculo.Placa" class="mr-5">
-             <span class="text-danger" asp-validation-for="EditVehiculo.Placa"></span>
-        </p>
+            <span class="text-danger" asp-validation-for="EditVehiculo.Placa"></span>
+        </p> *@
+        <input type="hidden" asp-for="EditVehiculo.Placa">
         <p>
             <label asp-for="EditVehiculo.Marca">Marca:  </label>
             <input type="text" asp-for="EditVehiculo.Marca" class="mr-5">

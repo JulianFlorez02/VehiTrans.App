@@ -12,7 +12,7 @@
         <p>
             <label asp-for="NewVehiculo.Placa">Placa:  </label>
             <input type="text" asp-for="NewVehiculo.Placa" class="mr-5">
-             <span class="text-danger" asp-validation-for="NewVehiculo.Placa"></span>
+            <span class="text-danger" asp-validation-for="NewVehiculo.Placa"></span>
         </p>
         <p>
             <label asp-for="NewVehiculo.Marca">Marca:  </label>
@@ -76,5 +76,11 @@
         <button type="submit" class="btn btn-primary">Addicionar</button>
     </div>
 </form>
+<br>
+@* @if(Model.existe==1)
+{
+    <h1>Ya existe un vehiculo con placa: @Model.NewVehiculo.Placa</h1>
+}
 
+<br> *@
 <a asp-page="./Vehiculos" class="btn-default">Lista de Vehiculos</a>

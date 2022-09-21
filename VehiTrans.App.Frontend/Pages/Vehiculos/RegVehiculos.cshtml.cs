@@ -19,12 +19,18 @@ namespace VehiTrans.App.Frontend
 
         [BindProperty]
         public Vehiculo NewVehiculo { get; set; } = new();
+        public IEnumerable<Vehiculo> BuscaVehiculo {get; set;}
+
+        public int existe {get;set;}
+        
+        public string vvplaca {get;set;}
         public void OnGet()
         {
              ListaTipoVehiculo = _repoVehiculoTipo.GetAllVehiculoTipos();
              ListaPropietario = _repoPropietario.GetAllPropietario();
              ListaConductor = _repoConductor.GetAllConductores();
              ListaMecanico = _repoMecanico.GetAllMecanicos();
+             existe=0;
         }
 
         public IActionResult OnPost()
@@ -36,7 +42,26 @@ namespace VehiTrans.App.Frontend
 
             _repoVehiculo.AddVehiculo(NewVehiculo);
             return RedirectToPage("./Vehiculos");
-            // return Page();
+
+            // vvplaca = NewVehiculo.Placa;
+            // //vplaca = NewVehiculo.Placa;
+            // //vvplaca = "ABC";
+            // //Console.WriteLine("Borrando web: "+ vvplaca);
+
+            // BuscaVehiculo = _repoVehiculo.BuscarVehiculo(vvplaca);
+            // //BuscaVehiculo = NewVehiculo;
+            // if (BuscaVehiculo == null)
+            // {
+            //     _repoVehiculo.AddVehiculo(NewVehiculo);
+            //     return RedirectToPage("./Vehiculos");
+            // }
+            // else
+            // {
+            //     existe = 1;
+            //     return RedirectToPage("./RegVehiculo");
+            // }
+            
+            
         }
     }
 }
