@@ -83,6 +83,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29uYVxSZWdQcm9waWV0YXJpby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/MINTIC/VehiTrans.App/VehiTrans.App.Frontend/Pages/Persona/VehiMecanico.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVyc29uYVxWZWhpTWVjYW5pY28uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/MINTIC/VehiTrans.App/VehiTrans.App.Frontend/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

@@ -22,8 +22,8 @@ namespace VehiTrans.App.Consola
             //BuscarMecanico(1);
             //AddPropietario();
             //AddConductor();
-            //AddVehiculosTipo("Buseta");
-            //AddVehiculosTipo("Microbus");
+            AddVehiculosTipo("Buseta");
+            AddVehiculosTipo("Microbus");
             //AddVehiculo();
             //AddTipoEstudio();
         }

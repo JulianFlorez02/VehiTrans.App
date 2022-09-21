@@ -84,6 +84,11 @@ namespace VehiTrans.App.Persistencia
             return _appContext.Vehiculos.Where(m => m.Placa.Contains(filtro) || m.Marca.Contains(filtro) || m.Modelo.Contains(filtro));
         }
 
+        IEnumerable<Vehiculo> IRepositorioVehiculo.GetVehiculoMecanico(int vMecanicoId)
+        {
+            return _appContext.Vehiculos.Where(p => p.MecanicoId == vMecanicoId);
+        }
+
     }
 
 }

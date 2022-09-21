@@ -14,5 +14,6 @@ namespace VehiTrans.App.Persistencia
         void DeleteVehiculo(int vvehiculoId);
         Vehiculo GetVehiculo(int vvehiculoId);
         IEnumerable<Vehiculo> BuscarVehiculo(string filtro);
+        IEnumerable<Vehiculo> GetVehiculoMecanico(int vMecanicoId);
     }
 }
