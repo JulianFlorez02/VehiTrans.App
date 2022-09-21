@@ -1,0 +1,37 @@
+﻿@page
+@model VehiTrans.App.Frontend.Pages.VehiMecanicoModel
+@{
+}
+<h1>Lista de Vehiculos del mecanico @Model.mecanico.Nombre @Model.mecanico.Apellidos</h1>
+
+<a asp-page="./Mecanico" class="btn btn-primary">Regresar</a>
+
+<table class="table mt-5">
+    <thead>
+        <tr>
+            <th scope="col">Placa</th>
+            <th scope="col">Marca</th>
+            <th scope="col">Modelo</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Pasajeros</th>
+            <th scope="col">Motor</th>
+        </tr>
+    </thead>
+    @foreach (var vvehiculo in Model.ListaVehiculos)
+    {
+        <tr>
+            <td>@vvehiculo.Placa</td>
+            <td>@vvehiculo.Marca</td>
+            <td>@vvehiculo.Modelo</td>
+            <td>@Model.TipoVehiculoText(vvehiculo.VehiculoTipoId)</td>
+            <td>@vvehiculo.CantidadPasajeros</td>
+            <td>@vvehiculo.CilindrajeMotor</td>
+            
+        </tr>
+    }
+</table>
+
+@if(Model.ListaVehiculos.Count()==0)
+{
+    <h1>No hay Vehiculos registrados</h1>
+}
